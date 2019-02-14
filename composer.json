@@ -1,6 +1,7 @@
 {
+    "name": "insayd10/insayd10",
     "require": {
-        "insayd10/happyMVC": "0.0.1",
+        "insayd10/happyMVC": "dev-master",
         "psr/log": "dev-master",
         "dwoo/dwoo": "1.3.*"
     }
