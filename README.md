@@ -11,6 +11,21 @@ Installation
 composer require insayd10/happymvc
 ```
 
+Local Development ServerLocal Development Server
+------------
+If you have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the serve Smiley command. This command will start a development server at http://localhost:8000 or choosed port.
+
+```bash
+cd ProjectDir
+```
+start on 8000
+```bash
+php smiley serve
+```
+or start on 3000 
+```bash
+php smiley serve 3000
+```
 Template engine docs
 ------------
 http://dwoo.org/documentation/v1.3/index.html
