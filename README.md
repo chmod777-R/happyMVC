@@ -64,7 +64,7 @@ Using models
 New file to models dir.
 ```php
 function getSomeData() {
-    etc...
+    #etc...
 }
 
 ```
