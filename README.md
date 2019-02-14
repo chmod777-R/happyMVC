@@ -39,3 +39,24 @@ helper("typer", 1);
 slug(...);
 
 ```
+Using models
+------------
+New file to models dir.
+```bash
+<?php
+function getSomeData() {
+    etc...
+}
+
+```
+
+edit your controller:
+
+```bash
+<?php
+useModel("example");
+function indexAction()
+{
+    getSomeData();
+
+```
