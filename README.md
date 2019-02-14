@@ -14,3 +14,17 @@ composer require insayd10/happymvc
 Template engine docs
 ------------
 http://dwoo.org/documentation/v1.3/index.html
+
+Example routing
+------------
+
+```bash
+<?php
+# An example about how can be happy :)
+setRoute("example", "example@indexAction");
+setRoute("example/try-your-message/{msg}", "example@tryYourMessage");
+setRoute("another-example", function() { 
+    echo "smiley";
+});
+
+```
