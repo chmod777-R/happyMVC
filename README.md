@@ -7,3 +7,7 @@ You can use composer libraries with happyMVC.
 
 Install : 
 composer require insayd10/happymvc
+
+
+Template engine docs:
+http://dwoo.org/documentation/v1.3/index.html
