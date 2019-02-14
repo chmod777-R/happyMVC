@@ -1,5 +1,5 @@
 {
-    "name": "insayd10/insayd10",
+    "name": "insayd10/happyMVC",
     "require": {
         "insayd10/happyMVC": "dev-master",
         "psr/log": "dev-master",
