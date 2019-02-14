@@ -7,7 +7,6 @@ You can use composer libraries with happyMVC.
 Installation
 ------------
 
-```
 ```bash
 composer require insayd10/happymvc
 ```
