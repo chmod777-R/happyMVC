@@ -33,7 +33,8 @@ http://dwoo.org/documentation/v1.3/index.html
 Example routing
 ------------
 
-```php
+```bash
+<?php
 # An example about how can be happy :)
 setRoute("example", "example@indexAction");
 setRoute("example/try-your-message/{msg}", "example@tryYourMessage");
@@ -44,7 +45,8 @@ setRoute("another-example", function() {
 ```
 
 Your controller: example.php
-```php
+```bash
+<?php
 function tryYourMessage($params) {
     print_r($params);
 }
@@ -54,7 +56,8 @@ Using helpers
 helpers reposes in src/func dir
 you can use helpers on every page.
 
-```php
+```bash
+<?php
 helper("typer", 1);
 slug(...);
 
@@ -62,27 +65,30 @@ slug(...);
 Using models
 ------------
 New file to models dir.
-```php
+```bash
+<?php
 function getSomeData() {
-    #etc...
+    etc...
 }
 
 ```
 
 edit your controller:
 
-```php
+```bash
+<?php
 useModel("example");
 function indexAction()
 {
     getSomeData();
-}
+
 ```
 
 Using views
 ------------
 Your controller file:
-```php
+```bash
+<?php
 function indexAction()
 {
     $data = ["msg" => "Just smile", "title" => "happyMVC", "main" => getBaseUrl()];
@@ -90,7 +96,7 @@ function indexAction()
 }
 ```
 New template file to views: example.dwoo
-```html
+```bash
 <!DOCTYPE html>
 <html lang="en" >
 
