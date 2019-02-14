@@ -28,6 +28,14 @@ setRoute("another-example", function() {
 });
 
 ```
+
+Your controller: example.php
+```bash
+<?php
+function tryYourMessage($params) {
+    print_r($params);
+}
+```
 Using helpers
 ------------
 helpers reposes in src/func dir
