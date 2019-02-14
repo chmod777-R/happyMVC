@@ -76,7 +76,7 @@ useModel("example");
 function indexAction()
 {
     getSomeData();
-
+}
 ```
 
 Using views
