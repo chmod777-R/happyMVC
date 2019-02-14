@@ -28,3 +28,14 @@ setRoute("another-example", function() {
 });
 
 ```
+Using helpers
+------------
+helpers reposes in src/func dir
+you can use helpers on every page.
+
+```bash
+<?php
+helper("typer", 1);
+slug(...);
+
+```
