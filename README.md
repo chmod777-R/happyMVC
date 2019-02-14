@@ -60,3 +60,44 @@ function indexAction()
     getSomeData();
 
 ```
+
+Using views
+------------
+Your controller file:
+```bash
+<?php
+function indexAction()
+{
+    $data = ["msg" => "Just smile", "title" => "happyMVC", "main" => getBaseUrl()];
+    getView("example", $data);
+}
+```
+New template file to views: example.dwoo
+```bash
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>{$title}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="http://localhost/oop1/public/happyHome/css/style.css">
+</head>
+
+<body>
+
+  <h2>{$msg}</h2>
+<div id="smile">
+  <div class="eye"></div>
+  <div class="eye"></div>
+</div>
+
+
+
+</body>
+
+</html>
+
+```
+
