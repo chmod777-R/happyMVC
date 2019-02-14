@@ -1,0 +1,18 @@
+#!/usr/bin/php
+<?php
+$request = $argv;
+switch (@@$request[1]) {
+        case 'serve':
+        $port = 8000;
+        if(isset($request[2])) {
+            $port = $request[2];
+        }
+        if(exec("php -S localhost:$port")) {
+        echo "Server started";
+        }
+        break;
+
+    default:
+        echo "Welcome";
+        break;
+}
