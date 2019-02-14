@@ -1,0 +1,6 @@
+{
+    "require": {
+        "psr/log": "dev-master",
+        "dwoo/dwoo": "1.3.*"
+    }
+}

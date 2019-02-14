@@ -1,0 +1,99 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100'
+
+$lineThickness: 0.55vh
+$lineColor: white
+$size: 320px
+$eyeHeight: $size / 6
+$animationTime: 10s
+
+*
+  box-sizing: border-box
+html
+  oveflow-x: hidden
+body
+  width: 100vw
+  overflow-x:hidden
+  height: 100vh
+  background-image: linear-gradient(35deg, #FF5F6D -10%, #FFC371)
+  
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: $lineColor
+  text-transform: uppercase
+  font-family: 'Lato'
+  h2
+    font-size: 52px
+    margin: 0
+    line-height: 0
+  
+  
+#smile
+  width: $size
+  height: $size
+  position: relative
+  display: block
+  &::after
+    content: ""
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    bottom: 0
+    left: 0
+    border-radius: 50%
+    border: $lineThickness solid transparent
+    border-bottom: $lineThickness solid $lineColor
+    animation: mouthStuff $animationTime infinite
+  
+  .eye
+    width: $lineThickness
+    height: $eyeHeight
+    display: block
+    position: absolute
+    background-color: $lineColor
+    left: $size / 3
+    top: $size / 2
+    animation: eyeStuff $animationTime infinite
+    
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      width: $size / 9
+      height: $size / 9
+      border-radius: 50%
+      border: $lineThickness solid transparent
+      border-bottom: $lineThickness solid $lineColor
+      top: -50%
+      border-radius: 50%
+      transform: translateX(-50%) rotate(180deg)
+      animation: browStuff $animationTime infinite
+    
+    &:nth-child(2)
+      left: $size / 1.5
+    
+@keyframes eyeStuff
+  30%
+    transform: translateX(#{$size / 15}) rotateZ(6deg)
+  50%
+    transform: translateX(-#{$size / 15}) rotateZ(-6deg)
+  70%, 0%, 100%
+    transform: translateX(0) rotateZ(0deg)
+
+@keyframes mouthStuff
+  30%
+    transform: rotateZ(25deg)
+  50%
+    transform: rotateZ(-25deg)
+  70%, 0%, 100%
+    transform: rotateZ(0deg)
+
+@keyframes browStuff
+  30%
+    transform: rotateZ(190deg) translateX(50%)
+  50%
+    transform: rotateZ(170deg) translateX(50%)
+  80%, 0%, 100%
+    transform: rotateZ(180deg) translateX(50%)

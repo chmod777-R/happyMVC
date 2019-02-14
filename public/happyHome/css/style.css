@@ -1,0 +1,163 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100';
+* {
+  box-sizing: border-box;
+}
+
+html {
+  oveflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(35deg, #FF5F6D -10%, #FFC371);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Lato";
+}
+body h2 {
+  font-size: 52px;
+  margin: 0;
+  line-height: 0;
+}
+
+#smile {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  display: block;
+}
+#smile::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 0.55vh solid transparent;
+  border-bottom: 0.55vh solid white;
+  -webkit-animation: mouthStuff 10s infinite;
+          animation: mouthStuff 10s infinite;
+}
+#smile .eye {
+  width: 0.55vh;
+  height: 53.3333333333px;
+  display: block;
+  position: absolute;
+  background-color: white;
+  left: 106.6666666667px;
+  top: 160px;
+  -webkit-animation: eyeStuff 10s infinite;
+          animation: eyeStuff 10s infinite;
+}
+#smile .eye::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 35.5555555556px;
+  height: 35.5555555556px;
+  border-radius: 50%;
+  border: 0.55vh solid transparent;
+  border-bottom: 0.55vh solid white;
+  top: -50%;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+  -webkit-animation: browStuff 10s infinite;
+          animation: browStuff 10s infinite;
+}
+#smile .eye:nth-child(2) {
+  left: 213.3333333333px;
+}
+
+@-webkit-keyframes eyeStuff {
+  30% {
+    -webkit-transform: translateX(21.3333333333px) rotateZ(6deg);
+            transform: translateX(21.3333333333px) rotateZ(6deg);
+  }
+  50% {
+    -webkit-transform: translateX(-21.3333333333px) rotateZ(-6deg);
+            transform: translateX(-21.3333333333px) rotateZ(-6deg);
+  }
+  70%, 0%, 100% {
+    -webkit-transform: translateX(0) rotateZ(0deg);
+            transform: translateX(0) rotateZ(0deg);
+  }
+}
+
+@keyframes eyeStuff {
+  30% {
+    -webkit-transform: translateX(21.3333333333px) rotateZ(6deg);
+            transform: translateX(21.3333333333px) rotateZ(6deg);
+  }
+  50% {
+    -webkit-transform: translateX(-21.3333333333px) rotateZ(-6deg);
+            transform: translateX(-21.3333333333px) rotateZ(-6deg);
+  }
+  70%, 0%, 100% {
+    -webkit-transform: translateX(0) rotateZ(0deg);
+            transform: translateX(0) rotateZ(0deg);
+  }
+}
+@-webkit-keyframes mouthStuff {
+  30% {
+    -webkit-transform: rotateZ(25deg);
+            transform: rotateZ(25deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-25deg);
+            transform: rotateZ(-25deg);
+  }
+  70%, 0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+@keyframes mouthStuff {
+  30% {
+    -webkit-transform: rotateZ(25deg);
+            transform: rotateZ(25deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-25deg);
+            transform: rotateZ(-25deg);
+  }
+  70%, 0%, 100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+@-webkit-keyframes browStuff {
+  30% {
+    -webkit-transform: rotateZ(190deg) translateX(50%);
+            transform: rotateZ(190deg) translateX(50%);
+  }
+  50% {
+    -webkit-transform: rotateZ(170deg) translateX(50%);
+            transform: rotateZ(170deg) translateX(50%);
+  }
+  80%, 0%, 100% {
+    -webkit-transform: rotateZ(180deg) translateX(50%);
+            transform: rotateZ(180deg) translateX(50%);
+  }
+}
+@keyframes browStuff {
+  30% {
+    -webkit-transform: rotateZ(190deg) translateX(50%);
+            transform: rotateZ(190deg) translateX(50%);
+  }
+  50% {
+    -webkit-transform: rotateZ(170deg) translateX(50%);
+            transform: rotateZ(170deg) translateX(50%);
+  }
+  80%, 0%, 100% {
+    -webkit-transform: rotateZ(180deg) translateX(50%);
+            transform: rotateZ(180deg) translateX(50%);
+  }
+}
