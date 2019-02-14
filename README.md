@@ -4,10 +4,14 @@ Are you writing classes for everyone to use, or do you just have a simple websit
 
 You can use composer libraries with happyMVC.
 
+Installation
+------------
 
-Install : 
+```
+```bash
 composer require insayd10/happymvc
+```
 
-
-Template engine docs:
+Template engine docs
+------------
 http://dwoo.org/documentation/v1.3/index.html
