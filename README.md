@@ -8,7 +8,7 @@ Installation
 ------------
 
 ```bash
-composer require insayd10/happymvc:^0.0
+composer require insayd10/happymvc:^0.0.1
 ```
 
 Local Development ServerLocal Development Server
