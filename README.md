@@ -7,8 +7,10 @@ You can use composer libraries with happyMVC.
 Installation
 ------------
 
+Download and use it.
 ```bash
-composer require insayd10/happymvc:^0.0.1
+## Some problems with: 
+## composer require insayd10/happymvc:^0.0.1
 ```
 
 Local Development ServerLocal Development Server
