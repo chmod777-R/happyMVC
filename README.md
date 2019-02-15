@@ -9,8 +9,7 @@ Installation
 
 Download and use it.
 ```bash
-## Some problems with: 
-## composer require insayd10/happymvc:^0.0.1
+composer require insayd10/happymvc
 ```
 
 Local Development ServerLocal Development Server
