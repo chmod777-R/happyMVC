@@ -9,7 +9,7 @@ Installation
 
 Download and use it.
 ```bash
-composer create-project insayd10/happymvc
+composer create-project insayd10/happymvc your-project
 ```
 
 Local Development ServerLocal Development Server
