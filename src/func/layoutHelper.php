@@ -21,7 +21,16 @@ function runController($controller, $action, $params = null) {
 function getView($viewName, $data) {
     # We using amazing template engine dwoo
     $core = new Dwoo\Core();
-    echo $core->get(VIEW_DIR.DS.$viewName.".dwoo", $data);
+
+    $arr = explode("\n", LAYOUT_SET);
+    foreach ($arr as $key => $value) {
+        preg_match("/\{(.*?)\}/", $value, $layout);
+        if($layout != $viewName && file_exists(VIEW_DIR.DS.@@$layout[1].".dwoo")) {
+            echo $core->get(VIEW_DIR.DS.$layout[1].".dwoo", $data);
+        } elseif(@@$layout[1] == "current") {
+            echo $core->get(VIEW_DIR.DS.$viewName.".dwoo", $data);
+        }
+    }
 }
 
 function useModel($modelName) {

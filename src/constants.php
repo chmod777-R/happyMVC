@@ -18,6 +18,7 @@ define('LIBRARY_DIR', MAIN.DS."library");
 #
 define('P_CONFIG', require_once(CONFIG_DIR.DS."project.php"));
 define('DATABASE', require_once(CONFIG_DIR.DS."database.php"));
+define('LAYOUT_SET', file_get_contents(CONFIG_DIR.DS."layout.set", true));
 
 
 function sys_happy_url(){
