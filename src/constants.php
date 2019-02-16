@@ -21,10 +21,14 @@ define('DATABASE', require_once(CONFIG_DIR.DS."database.php"));
 
 
 function sys_happy_url(){
-  return sprintf(
+  $base = sprintf(
     "%s://%s%s",
     isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
     $_SERVER['SERVER_NAME'],
     $_SERVER['REQUEST_URI']
   );
+  foreach ($_GET as $key => $value) {
+     $base = str_replace($value, null, $base);
+  }
+  return $base;
 }
