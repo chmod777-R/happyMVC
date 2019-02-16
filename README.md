@@ -12,7 +12,7 @@ Download and use it.
 composer create-project insayd10/happymvc your-project
 ```
 
-Local Development ServerLocal Development Server
+Local Development ServerLocal Development Server || Doesnt work at this realese
 ------------
 If you have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the serve Smiley command. This command will start a development server at http://localhost:8000 or choosed port.
 
