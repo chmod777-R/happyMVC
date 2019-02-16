@@ -6,7 +6,7 @@ function runController($controller, $action, $params = null) {
     $filePath = CONTROLLER_DIR.DS.$controller.".php";
     if(isset($controller)) {
         if(file_exists($filePath)) {
-            require_once($filePath);
+            @@require_once($filePath);
             if(@@function_exists($action)) {
                 # Sayfamızı çalıştırıyoruz
                 $action($params);
