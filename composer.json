@@ -1,8 +1,11 @@
 {
     "name": "insayd10/happymvc",
+    "license": "MIT",
+    "type": "project",
+    "description": "MVC without OOP",
     "require": {
-        "insayd10/happyMVC": "dev-master",
-        "psr/log": "dev-master",
         "dwoo/dwoo": "1.3.*"
-    }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
