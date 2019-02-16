@@ -1,5 +1,8 @@
 #!/usr/bin/php
+Doestn work, just developing
 
+<?php
+/*
 <?php
 /*
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'               `$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -20,7 +23,7 @@ $JT&yd$     $$$$$$$$$$$$$$$$.    $    $$    $   .$$$$$$$$$$$$$$$$     $by&TL$
                                  `$        $'
                                   `$$$$$$$$'
 
-*/
+
 $request = $argv;
 switch (@@$request[1]) {
         case 'serve':
@@ -28,7 +31,7 @@ switch (@@$request[1]) {
         if(isset($request[2])) {
             $port = $request[2];
         }
-        if(exec("php -S localhost:$port")) {
+        if(exec("php -S localhost:$port router.php")) {
         echo "Server started";
         }
         break;
@@ -37,3 +40,4 @@ switch (@@$request[1]) {
         echo ":)";
         break;
 }
+*/

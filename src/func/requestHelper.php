@@ -30,8 +30,15 @@ function setRoute($uri, $callback) {
             $callback = explode('@', $callback);
             runController($callback[0], $callback[1], @@$realParams);
         } else {
-            call_user_func($callback, $realParams);
+            @@call_user_func($callback, $realParams);
         }
+    }
+
+    # 404
+    if(file_exists($s404 = VIEW_DIR.DS."404.dwoo")) {
+        require_once($s404);
+    } else {
+        die("404");
     }
 }
 

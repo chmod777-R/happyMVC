@@ -6,15 +6,14 @@ function runController($controller, $action, $params = null) {
     $filePath = CONTROLLER_DIR.DS.$controller.".php";
     if(isset($controller)) {
         if(file_exists($filePath)) {
-            @@require_once($filePath);
-            if(@@function_exists($action)) {
+            require_once($filePath);
+            if(function_exists($action)) {
                 # Sayfamızı çalıştırıyoruz
                 $action($params);
+                die("<!--happy-->");
             } else {
                 echo ERROR[1]." : ".$action;
             }
-        } else {
-            echo "404";
         }
     }
 }
