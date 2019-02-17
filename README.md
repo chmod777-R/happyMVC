@@ -1,5 +1,3 @@
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 # HappyMVC
 So happy MVC very justified reason
