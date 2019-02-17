@@ -1,3 +1,6 @@
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Total Downloads][ico-downloads]][link-downloads]
+
 # HappyMVC
 So happy MVC very justified reason
 Are you writing classes for everyone to use, or do you just have a simple website project? Then why are you tired?
